@@ -11,6 +11,9 @@ body {
     margin-left:35%;
     margin-right: 35%;
     padding: 1rem;
+
+    border-radius: 0.2rem;
+    box-shadow: 0 2px 4px 0 black;
 }
 
 .text-center {
