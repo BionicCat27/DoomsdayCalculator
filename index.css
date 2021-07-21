@@ -1,0 +1,18 @@
+body {
+    background-color: lightblue;
+}
+
+#PageTitle {
+    text-align: center;
+}
+
+#CalculatorContent {
+    background-color: white;
+    margin-left:35%;
+    margin-right: 35%;
+    padding: 1rem;
+}
+
+.text-center {
+    text-align: center;
+}
