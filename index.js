@@ -23,16 +23,21 @@ function calculateDoomsday() {
     var DateNumValue = DateNum.value;
 
     //Check valid inputs
+    var doEnd = false;
     if(YearNumValue < 1) {
         DoomsdayResult.innerText += "Invalid year.\n";
-        return;
+        doEnd = true;
     }
-    if(MonthNumValue < 1 || MonthNumvalue > 12) {
+    if(MonthNumValue < 1 || MonthNumValue > 12) {
         DoomsdayResult.innerText += "Invalid month.\n";
-        return;
+        doEnd = true;
     }
     if(DateNumValue < 1 || DateNumValue > 31) {
         DoomsdayResult.innerText += "Invalid date.\n";
+        doEnd = true;        
+    }
+    //If error, return
+    if(doEnd) {
         return;
     }
 
