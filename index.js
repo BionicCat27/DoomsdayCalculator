@@ -14,26 +14,44 @@ var Doomsday0000 = 1;
 
 function calculateDoomsday() {
 
+    //Clear output message
+    DoomsdayResult.innerText = "";
+
     //Get input values
     var YearNumValue = YearNum.value;
     var MonthNumValue = MonthNum.value;
     var DateNumValue = DateNum.value;
 
     //Check valid inputs
+    if(YearNumValue < 1) {
+        DoomsdayResult.innerText += "Invalid year.\n";
+        return;
+    }
+    if(MonthNumValue < 1 || MonthNumvalue > 12) {
+        DoomsdayResult.innerText += "Invalid month.\n";
+        return;
+    }
+    if(DateNumValue < 1 || DateNumValue > 31) {
+        DoomsdayResult.innerText += "Invalid date.\n";
+        return;
+    }
 
     //Anchor calculation
     var YearCentury = Math.floor(YearNumValue/100);
     var isLeapCentury = YearCentury % 4 == 0;
+
     //Calculate simple anchor doomsday
     var AnchorDoomsday = Math.abs(Doomsday0000 + (YearCentury * 2) + 2);
     if(isLeapCentury) { //If anchor century was a leap year, doomsday is 29, so +=1
         AnchorDoomsday += 1;
     }
     AnchorDoomsday = AnchorDoomsday % 7;
+
     //Year calculation
     var YearSinceCentury = YearNumValue - (YearCentury*100);
     var isLeapYear = YearSinceCentury % 4 == 0;
     var YearDoomsday = AnchorDoomsday + YearSinceCentury + Math.floor(YearSinceCentury / 4);
+
     //Month calulation
     var MonthDoomsday;
     switch(MonthNumValue) {
@@ -85,6 +103,7 @@ function calculateDoomsday() {
             alert("Incorrect month: " + MonthNumValue);
             break;
     }
+
     //Date calculation
     var DateDifference = DateNumValue - MonthDoomsday;
     var DateDoomsday = YearDoomsday + DateDifference;
@@ -118,7 +137,7 @@ function calculateDoomsday() {
         case 6:
             DoomsdayResult.innerText = "Saturday";
             break;
-        default: 
+        default:
             alert("Incorrect day of week");
     }
 }
