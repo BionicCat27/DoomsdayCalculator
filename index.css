@@ -7,7 +7,7 @@ body {
     text-align: center;
 }
 
-#CalculatorContent {
+.div-card {
     background-color: white;
     margin-left:35%;
     margin-right: 35%;
@@ -19,4 +19,26 @@ body {
 
 .text-center {
     text-align: center;
+}
+
+.margin-top-1 {
+    margin-top: 1rem;
+}
+
+#credit-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: black;
+    text-align: center;
+
+    padding: 0.5rem;
+}
+
+#github-logo {
+    vertical-align: middle;
+    display:inline;
+    width: 4em;
 }

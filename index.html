@@ -8,7 +8,7 @@
     </head>
     <body>
         <h1 class="text-center">Doomsday Calculator</h1>
-        <div id="CalculatorContent" >
+        <div id="CalculatorContent" class="div-card">
             <p>Please enter a year (1+)</p>
             <input type="number" id="YearNum">
             <p>Please enter a month (1-12)</p>
@@ -18,6 +18,14 @@
             <button id="DoomsdayButton">Calculate day of week!</button>
             <p id="DoomsdayResult"></p>
         </div>
+        <h2 class="text-center">The Doomsday Rule Explained</h2> 
+        <div id="DoomsdayDescription" class="div-card">
+            <p>The <a href="https://en.wikipedia.org/wiki/Doomsday_rule">Doomsday Rule</a>
+                is an algorithm created by 
+                <a href="https://www.wikiwand.com/en/John_Horton_Conway">John Conway</a>
+                for calculating the day of the week of any day in the history or future.</p>
+        </div>
+        <footer id="credit-footer">A project by Aslan Bennington-Barr @ <a href="https://github.com/BionicCat27"><img id="github-logo" src="resources/GitHub_Logo.png" ></a></footer>
         <script src="index.js"></script>
     </body>
 </html>
