@@ -6,6 +6,7 @@ A website that uses John Conway's Doomsday calculations to find the day of week 
 Download the source files, and open the `index.html` file in a browser. Enter the numerical representation of any date AD, future or past. Press calculate, and find out what day of the week that date is! 
 
 Follow [this link](https://github.com/BionicCat27/Doomsday-Calculator-Java) for a Java version.
+
 Follow [this link](https://github.com/BionicCat27/Doomsday-Calculator-Python/) for a Python version.
 
 ## Current Features
