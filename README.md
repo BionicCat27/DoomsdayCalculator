@@ -1,9 +1,11 @@
-# DoomsdayCalculator
+# Web Doomsday Calculator
 ## Description
 A website that uses John Conway's Doomsday calculations to find the day of week of any day.
 
 ## Instructions
 Download the source files, and open the `index.html` file in a browser. Enter the numerical representation of any date AD, future or past. Press calculate, and find out what day of the week that date is! 
+
+Follow [this link](https://github.com/BionicCat27/Java-Doomsday-Calculator) for a Java version.
 
 ## Current Features
  - Doomsday Calculator frontend form
