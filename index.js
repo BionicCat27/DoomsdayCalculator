@@ -117,30 +117,30 @@ function calculateDoomsday() {
     }
     DateDoomsday = DateDoomsday % 7;
     
-    DoomsdayResult.innerText = "";
+    DoomsdayResult.innerText = DateNumValue + "/" + MonthNumValue + "/" + YearNumValue + " is a:";
 
     //Output result
     switch(DateDoomsday) {
         case 0:
-            DoomsdayResult.innerText = "Sunday";
+            DoomsdayResult.innerText += " Sunday";
             break;
         case 1:
-            DoomsdayResult.innerText = "Monday";
+            DoomsdayResult.innerText += " Monday";
             break;
         case 2:
-            DoomsdayResult.innerText = "Tuesday";
+            DoomsdayResult.innerText += " Tuesday";
             break;
         case 3:
-            DoomsdayResult.innerText = "Wednesday";
+            DoomsdayResult.innerText += " Wednesday";
             break;
         case 4:
-            DoomsdayResult.innerText = "Thursday";
+            DoomsdayResult.innerText += " Thursday";
             break;
         case 5:
-            DoomsdayResult.innerText = "Friday";
+            DoomsdayResult.innerText += " Friday";
             break;
         case 6:
-            DoomsdayResult.innerText = "Saturday";
+            DoomsdayResult.innerText += " Saturday";
             break;
         default:
             alert("Incorrect day of week");
