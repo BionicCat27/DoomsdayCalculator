@@ -4,7 +4,7 @@
         <title>
             Doomsday Calculator
         </title>
-        <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="stylesheet" type="text/css" href="output.css">
         <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100;400&display=swap" rel="stylesheet"> 
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -17,9 +17,14 @@
         gtag('config', 'G-QY8V4NDBLZ');
         </script>
     </head>
-    <body>
-        <h1 class="text-center white">Doomsday Calculator</h1>
-        <div id="CalculatorContent" class="div-card main-content">
+    <body class="mx-32 mt-32">
+	<div class="mx-1">
+	    <h1 class="text-2xl white">John Conway's</h1>
+            <h1 class="text-4xl white">Doomsday Calculator</h1>
+	    <h1 class="text-base white">A project by Aslan Bennington-Barr</h1>
+	</div>
+        <div id="CalculatorContent" class="bg-white text-base py-4 my-4 px-2 rounded w-auto">
+	    <h2 class="text-2xl">Calculator</h2>
             <p>Enter any date, and find out what day of the week it would be using the Doomsday Rule!</p>
             <p>Please enter a year (1+)</p>
             <input type="number" id="YearNum">
@@ -30,8 +35,8 @@
             <button id="DoomsdayButton">Calculate day of week!</button>
             <p id="DoomsdayResult"></p>
         </div>
-        <h2 class="text-center white">The Doomsday Rule Explained</h2> 
-        <div id="DoomsdayDescription" class="div-card main-content">
+        <div id="DoomsdayDescription" class="bg-white text-base py-4 my-4 px-2 rounded w-auto">
+            <h2 class="text-2xl">The Doomsday Rule Explained</h2> 
             <p>The <a href="https://en.wikipedia.org/wiki/Doomsday_rule">Doomsday Rule</a>
                 is an algorithm created by 
                 <a href="https://www.wikiwand.com/en/John_Horton_Conway">John Conway</a>
@@ -41,10 +46,7 @@
                 <p>This means that 28/2/2100 will be a tuesday, 28/2/2200 will be a Thursday, and 28/2/2300 will be a Saturday - a difference of two days each time.</p>
                 <p>These cycles allow us to calculate what day of the week any date will be - you can even do it in your head!</p>
         </div>
-        <footer id="credit-footer">A project by <a href="https://aslanbb.vercel.app/">Aslan Bennington-Barr</a><br>
-            <a href="https://github.com/BionicCat27"><img id="github-logo" src="resources/GitHub_Logo.png" ></a>
-            <a href="https://www.linkedin.com/in/aslan-bennington-barr/"><img id="linkedin-logo" src="resources/LI-Logo.png" ></a>
-        </footer>
+	<h2 class="white text-lg mx-1">Like this website? Check out my <a href="https://aslanbb.vercel.app/">portfolio website</a>, <a href="https://github.com/BionicCat27">GitHub</a>, and <a href="https://www.linkedin.com/in/aslan-bennington-barr/">LinkedIn</a>.</h2> 
         <script src="index.js"></script>
     </body>
 </html>

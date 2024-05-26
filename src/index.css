@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html {
     scroll-behavior: smooth;
 }
@@ -65,53 +69,4 @@ a {
     text-align: center;
 
     padding: 0.5rem;
-}
-
-#github-logo {
-    vertical-align: middle;
-    display:inline;
-    width: 4em;
-}
-
-#linkedin-logo {
-    vertical-align: middle;
-    display:inline;
-    width: 5em;
-}
-
-/* Responsive page width media queries*/
-@media (max-width: 960px) {
-    body {
-        font-size: 2vw;
-    }
-
-    .main-content {
-        margin-left:10%;
-        margin-right: 10%;
-    }
-
-}
-
-@media (max-width: 720px) {
-    body {
-        font-size: 3vw;
-    }
-
-    .main-content {
-        margin-left:10%;
-        margin-right: 10%;
-    }
-    
-}
-
-@media (max-width: 480px) {
-    body {
-        font-size: 4vw;
-    }
-
-    .main-content {
-        margin-left:10%;
-        margin-right: 10%;
-    }
-
 }

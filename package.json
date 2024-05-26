@@ -1,0 +1,14 @@
+{
+  "name": "doomsday-calculator-web",
+  "version": "1.0.0",
+  "description": "A website that uses John Conway's Doomsday calculations to find the day of week of any day.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  }
+}
