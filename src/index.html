@@ -17,15 +17,16 @@
         gtag('config', 'G-QY8V4NDBLZ');
         </script>
     </head>
-    <body class="mx-32 mt-32">
+    <body class="mt-32 flex flex-col justify-center items-center">
+	<div class="w-10/12 md:w-5/12">
 	<div class="mx-1">
 	    <h1 class="text-2xl text-white">John Conway's</h1>
             <h1 class="text-4xl text-white">Doomsday Calculator</h1>
 	    <h1 class="text-base text-white">A project by Aslan Bennington-Barr</h1>
 	</div>
-        <div id="CalculatorContent" class="bg-white text-base py-4 my-4 px-2 rounded w-auto">
+        <div id="CalculatorContent" class="bg-white text-base py-4 my-4 px-4 rounded">
 	    <h2 class="text-2xl">Calculator</h2>
-            <p>Enter any date, and find out what day of the week it would be using the Doomsday Rule!</p>
+            <p>Enter a date to find out which day of the week it would be using the Doomsday Rule!</p>
 	    <div class="flex flex-auto">
 		<div>
 	    	    <label class="block" for="YearNum">Year</label>
@@ -43,7 +44,7 @@
             <button id="DoomsdayButton">Calculate day of week!</button>
 	    <p id="DoomsdayResult"></p>
         </div>
-        <div id="DoomsdayDescription" class="bg-white text-base py-4 my-4 px-2 rounded w-auto">
+        <div id="DoomsdayDescription" class="bg-white text-base py-4 my-4 px-4 rounded">
             <h2 class="text-2xl">The Doomsday Rule Explained</h2> 
             <p>The <a class="underline" href="https://en.wikipedia.org/wiki/Doomsday_rule">Doomsday Rule</a> is an algorithm created by <a class="underline" href="https://www.wikiwand.com/en/John_Horton_Conway">John Conway</a> for calculating the day of the week of any day in history or the future.
 	    <br><br>
@@ -55,7 +56,10 @@
 	    <br><br>
 	    These cycles allow us to calculate what day of the week any date will be - you can even do it in your head!</p>
         </div>
-	<h2 class="text-white text-lg mx-1">Like this website? Check out my <a class="underline" href="https://aslanbb.vercel.app/">portfolio website</a>, <a class="underline" href="https://github.com/BionicCat27">GitHub</a>, and <a class="underline" href="https://www.linkedin.com/in/aslan-bennington-barr/">LinkedIn</a>.</h2> 
+	<div>
+	    <h2 class="text-white text-lg mx-1">Like this website? Check out my <a class="underline" href="https://aslanbb.vercel.app/">portfolio website</a>, <a class="underline" href="https://github.com/BionicCat27">GitHub</a>, and <a class="underline" href="https://www.linkedin.com/in/aslan-bennington-barr/">LinkedIn</a>.</h2> 
+	</div>
+	</div>
         <script src="index.js"></script>
     </body>
 </html>
