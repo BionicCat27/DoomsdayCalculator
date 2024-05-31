@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="scroll-smooth">
     <head>
         <title>
             Doomsday Calculator
@@ -19,34 +19,43 @@
     </head>
     <body class="mx-32 mt-32">
 	<div class="mx-1">
-	    <h1 class="text-2xl white">John Conway's</h1>
-            <h1 class="text-4xl white">Doomsday Calculator</h1>
-	    <h1 class="text-base white">A project by Aslan Bennington-Barr</h1>
+	    <h1 class="text-2xl text-white">John Conway's</h1>
+            <h1 class="text-4xl text-white">Doomsday Calculator</h1>
+	    <h1 class="text-base text-white">A project by Aslan Bennington-Barr</h1>
 	</div>
         <div id="CalculatorContent" class="bg-white text-base py-4 my-4 px-2 rounded w-auto">
 	    <h2 class="text-2xl">Calculator</h2>
             <p>Enter any date, and find out what day of the week it would be using the Doomsday Rule!</p>
-            <p>Please enter a year (1+)</p>
-            <input type="number" id="YearNum">
-            <p>Please enter a month (1-12)</p>
-            <input type="number" id="MonthNum">
-            <p>Please enter a day (1-31)</p>
-            <input type="number" id="DateNum">
+	    <div class="flex flex-auto">
+		<div>
+	    	    <label class="block" for="YearNum">Year</label>
+            	    <input class="block border rounded w-full" type="number" id="YearNum">
+		</div>
+		<div>
+            	    <label class="block" for="MonthNum">Month</label>
+            	    <input class="block border rounded w-full" type="number" id="MonthNum">
+		</div>
+		<div>
+            	    <label class="block" for="DateNum">Day</label>
+            	    <input class="block border rounded w-full" type="number" id="DateNum">
+		</div>
+	    </div>
             <button id="DoomsdayButton">Calculate day of week!</button>
-            <p id="DoomsdayResult"></p>
+	    <p id="DoomsdayResult"></p>
         </div>
         <div id="DoomsdayDescription" class="bg-white text-base py-4 my-4 px-2 rounded w-auto">
             <h2 class="text-2xl">The Doomsday Rule Explained</h2> 
-            <p>The <a href="https://en.wikipedia.org/wiki/Doomsday_rule">Doomsday Rule</a>
-                is an algorithm created by 
-                <a href="https://www.wikiwand.com/en/John_Horton_Conway">John Conway</a>
-                for calculating the day of the week of any day in history or the future.</p>
-                <p>There are a few principles which make these calculations possible. There are patterns in the cycle of days in the week over the course of months, years, decades and even centuries.</p>
-                <p>For example, there are approximately 5,217.86 weeks in a century. This means that every 100 years, the same date will be a numerically different day of the week by a roughly constant amount.</p>
-                <p>This means that 28/2/2100 will be a tuesday, 28/2/2200 will be a Thursday, and 28/2/2300 will be a Saturday - a difference of two days each time.</p>
-                <p>These cycles allow us to calculate what day of the week any date will be - you can even do it in your head!</p>
+            <p>The <a class="underline" href="https://en.wikipedia.org/wiki/Doomsday_rule">Doomsday Rule</a> is an algorithm created by <a class="underline" href="https://www.wikiwand.com/en/John_Horton_Conway">John Conway</a> for calculating the day of the week of any day in history or the future.
+	    <br><br>
+	    There are a few principles which make these calculations possible. There are patterns in the cycle of days in the week over the course of months, years, decades and even centuries.
+	    <br><br>
+	    For example, there are approximately 5,217.86 weeks in a century. This means that every 100 years, the same date will be a numerically different day of the week by a roughly constant amount.
+	    <br><br>
+	    This means that 28/2/2100 will be a tuesday, 28/2/2200 will be a Thursday, and 28/2/2300 will be a Saturday - a difference of two days each time.
+	    <br><br>
+	    These cycles allow us to calculate what day of the week any date will be - you can even do it in your head!</p>
         </div>
-	<h2 class="white text-lg mx-1">Like this website? Check out my <a href="https://aslanbb.vercel.app/">portfolio website</a>, <a href="https://github.com/BionicCat27">GitHub</a>, and <a href="https://www.linkedin.com/in/aslan-bennington-barr/">LinkedIn</a>.</h2> 
+	<h2 class="text-white text-lg mx-1">Like this website? Check out my <a class="underline" href="https://aslanbb.vercel.app/">portfolio website</a>, <a class="underline" href="https://github.com/BionicCat27">GitHub</a>, and <a class="underline" href="https://www.linkedin.com/in/aslan-bennington-barr/">LinkedIn</a>.</h2> 
         <script src="index.js"></script>
     </body>
 </html>

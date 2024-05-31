@@ -573,12 +573,36 @@ video {
   margin-top: 8rem;
 }
 
+.block {
+  display: block;
+}
+
+.flex {
+  display: flex;
+}
+
 .w-auto {
   width: auto;
 }
 
+.w-full {
+  width: 100%;
+}
+
+.flex-auto {
+  flex: 1 1 auto;
+}
+
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+
 .rounded {
   border-radius: 0.25rem;
+}
+
+.border {
+  border-width: 1px;
 }
 
 .bg-white {
@@ -616,8 +640,13 @@ video {
   line-height: 1.75rem;
 }
 
-html {
-  scroll-behavior: smooth;
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.underline {
+  text-decoration-line: underline;
 }
 
 body {
@@ -634,7 +663,7 @@ body {
 }
 
 button {
-  margin: 0.2rem;
+  margin-top: 0.2rem;
   font-size: .8rem;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -646,14 +675,6 @@ button {
   display:inline-block;
 }
 
-a {
-  color: black;
-}
-
-.white {
-  color: white;
-}
-
 .div-card {
   background-color: white;
   margin-left:35%;
@@ -661,23 +682,4 @@ a {
   padding: 1rem;
   border-radius: 0.2rem;
   box-shadow: 0 2px 4px 0 black;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.margin-top-1 {
-  margin-top: 1rem;
-}
-
-#credit-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: white;
-  color: black;
-  text-align: center;
-  padding: 0.5rem;
 }
